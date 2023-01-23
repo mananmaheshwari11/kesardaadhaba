@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box ;
+
+}
+body.start{
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+h1.head{
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    padding: 20px;
+
+}
+nav{
+    background-color: yellow;
+    display: grid;
+    place-items: center;
+
+}
+nav ul{
+    list-style-type: none;
+    
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    color: #000;
+    transition: 0.2s ease-in;
+    font-size: 20px
+}
+nav ul a:hover{
+    background-color: black;
+    color: white; 
+       
+}
+nav ul a:active{
+    background-color: black;
+    color: yellow;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.items img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: white;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item h3{
+    text-align: center;
+    font-size: small;
+
+}
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline:navy;
+     background-color: green;
+     color: white;
+     cursor: pointer;
+     border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2 all;
+}
+.item button:hover{
+    transform: scale(1.08);
+}
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.heading span{
+    color: blue;
+}
+@media screen and (max-width:1000px){
+    .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px){
+        .items{
+            grid-template-columns: repeat(1,1fr);
+    
+}
+}
+.headings {
+    text-align: center;
+}
+.headings span{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: red;
+    background-color: black;
+    
+}
+.about{
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+.restro a{
+    display: block;
+    color:yellow;
+    padding: 8px 20px;
+    border: 3px solid ;
+    transition: 0.6s ease;
+     font-size: 20px ;
+    }
+    .restro a:hover{
+        background-color: orangered;
+        color:white;
+    }
+    .space{
+        color: blue;
+        text-align: center;
+        font-size: 50px;
+    }
+    .form.plate{
+        font-size: large;
+        color: blue;
+ }
+.comment{
+    background-image: url(gallerygirl.jpg)
+
+}
+
+
+
